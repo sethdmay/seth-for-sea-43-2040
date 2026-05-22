@@ -883,6 +883,124 @@ const TWEAKS = /*EDITMODE-BEGIN*/{
     section{padding:64px var(--pad)}
     .nav-links a:not(.nav-cta){display:none}
   }
+
+  /* ============ MOBILE (phones) ============ */
+  @media (max-width:600px){
+    :root{
+      --pad:16px;
+    }
+    body{font-size:16px}
+
+    /* Nav */
+    .nav-inner{padding:12px var(--pad)}
+    .brand{font-size:18px;gap:6px}
+    .brand .for{font-size:9px}
+    .brand .dot{width:8px;height:8px}
+    .nav-cta{padding:8px 14px !important;font-size:13px !important}
+
+    /* Hero */
+    .hero{padding:16px var(--pad) 0}
+    .hero-text{padding:4px 0 20px;text-align:center}
+    .eyebrow{justify-content:center;font-size:11px;margin-bottom:12px}
+    .eyebrow::before{width:20px}
+    .h1{font-size:clamp(42px,12vw,54px);margin-bottom:12px}
+    .hero-sub{font-size:15px;max-width:none;text-align:center;margin:0 auto 18px}
+    .hero-portrait img{width:75%;max-width:320px}
+    .hero-stripes{opacity:0.7}
+
+    /* Signup */
+    .signup{padding:8px;max-width:100%}
+    .signup-row{flex-direction:column;gap:10px}
+    .signup input{padding:14px 12px;font-size:16px;text-align:center}
+    .btn{width:100%;justify-content:center;padding:14px 18px}
+    .signup-note{text-align:center;font-size:11px}
+
+    /* Urgency bar */
+    .urgency{padding:12px var(--pad);font-size:11px;text-align:center;flex-direction:column;gap:8px}
+    .urgency span{text-align:center}
+
+    /* Horizon */
+    .horizon{margin-top:4px}
+    .horizon svg{border-radius:12px}
+    .horizon-caption{font-size:9px;flex-direction:column;align-items:flex-start;gap:6px}
+
+    /* Sections */
+    section{padding:48px var(--pad)}
+    .section-eyebrow{font-size:11px;margin-bottom:14px}
+
+    /* Why */
+    .why{gap:24px}
+    .why h2{font-size:clamp(28px,7vw,36px)}
+    .why-body p{font-size:16px}
+    .why-body p:first-child::first-letter{font-size:48px}
+    .why-meta{gap:8px}
+    .pill{font-size:10px;padding:6px 10px}
+
+    /* Issues */
+    .issues-head{margin-bottom:32px}
+    .issues-head h2{font-size:clamp(28px,7vw,40px)}
+    .issues-head p{font-size:15px}
+    .issue{grid-template-columns:1fr;gap:14px;padding:28px 0}
+    .issue-num{font-size:11px;padding-top:0}
+    .issue-title{gap:12px}
+    .issue-title h3{font-size:clamp(26px,6vw,32px)}
+    .issue-icon{width:48px;height:48px;border-radius:12px}
+    .issue-icon svg{width:26px;height:26px}
+    .issue-body{grid-column:1;padding-left:0}
+    .issue-body p{font-size:15px}
+    .issue-tag{font-size:10px}
+
+    /* Commitments */
+    .commit{padding:48px var(--pad) 56px}
+    .commit h2{font-size:clamp(28px,7vw,40px);margin-bottom:28px}
+    .commit-item{font-size:15px;padding:14px 0;gap:12px}
+    .commit-item .chk{width:24px;height:24px;font-size:12px}
+
+    /* Pride */
+    .pride-photo{aspect-ratio:16/10;border-radius:14px}
+    .pride h2{font-size:clamp(26px,6.5vw,34px);margin-bottom:18px}
+    .pride p{font-size:15px}
+
+    /* About */
+    .about{gap:28px}
+    .about-photo{aspect-ratio:1/1;border-radius:16px}
+    .about-photo::after{left:-8px;bottom:-8px;border-radius:14px}
+    .about h2{font-size:clamp(26px,6.5vw,34px)}
+    .about p{font-size:15px}
+    .timeline{margin-top:24px}
+    .tl-row{grid-template-columns:1fr;gap:6px;padding:14px 0}
+    .tl-year{font-size:12px}
+    .tl-role{font-size:15px}
+    .tl-where{font-size:13px}
+
+    /* Get Involved */
+    .involve h2{font-size:clamp(30px,8vw,44px)}
+    .involve .lede{font-size:16px}
+    .involve-card{padding:20px 18px;border-radius:14px}
+    .involve-card h4{font-size:20px}
+    .involve-card p{font-size:14px}
+
+    /* Dates */
+    .dates{padding:48px var(--pad)}
+    .dates-head{margin-bottom:28px}
+    .dates-head h2{font-size:clamp(26px,6.5vw,36px)}
+    .dates-head p{font-size:14px}
+    .date-card{padding:24px 20px;border-radius:14px}
+    .date-card .dc-date{font-size:clamp(28px,7vw,40px)}
+    .date-card .dc-sub{font-size:14px}
+
+    /* Footer */
+    footer{padding:48px var(--pad) 24px}
+    .foot-top{grid-template-columns:1fr;gap:28px;padding-bottom:28px}
+    .foot-brand{font-size:26px}
+    .foot-blurb{font-size:14px}
+    .foot-col h5{margin-bottom:10px}
+    .foot-col a{font-size:14px;padding:4px 0}
+    .foot-bottom{flex-direction:column;align-items:flex-start;gap:8px;font-size:10px}
+
+    /* Tweaks panel - hide on mobile */
+    .tweaks{display:none !important}
+  }
 </style>
 </head>
 <body data-accent="cobalt" data-theme="light" data-hero="portrait-right" data-motif="on">
